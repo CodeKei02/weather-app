@@ -1,0 +1,93 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    min-height: 100vh;
+    max-width: 1200px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url(../images/weather_image.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.weather__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    max-height: 550px;
+    background-color: rgb(90, 111, 181);
+    border-radius: 1rem;
+}
+
+.title{
+    margin: 1rem 0;
+    color: white;
+    text-align: center;
+}
+
+input, select, button{
+    text-align: center;
+    border-radius: .5rem;
+    padding: 1rem .5rem;
+    border: 1px solid rgb(236, 218, 218);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+option{
+    margin-top: 1.5rem;
+    background-color: white;
+    color: black;
+}
+
+.weather__data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+p{  
+    font-weight: bold;
+    color: white;
+}
+
+.city__name{
+    color: rgb(218, 241, 91);
+    text-transform: uppercase;
+}
+
+img{
+    width: 25%;
+    object-fit: cover;
+}
+
+button{
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-image: url(../images/button_image.jpeg);
+    color: rgb(0, 0, 0);
+}
+
+button:hover{
+    margin: 0 1.5rem;
+    transition: .3s ease-in margin;
+}
+
+.error{
+    color: rgb(79, 19, 19);
+    text-align: center;
+    margin: 1rem 0;
+}
