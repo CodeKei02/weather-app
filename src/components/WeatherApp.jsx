@@ -36,9 +36,9 @@ export const WeatherApp = () => {
         <div className="weather__data">
           <p>Clima en <span className="city__name">{city}</span></p>
           <img src={weatherData.weatherIcon} />
-          <p>Temperatura actual: {weatherData.temperature}</p>
-          <p>Temperatura max: {weatherData.tempMax}</p>
-          <p>Temperatura min: {weatherData.tempMin}</p>
+          <p>Temperatura actual: {weatherData.temperature} °C</p>
+          <p>Temperatura max: {weatherData.tempMax} °C </p>
+          <p>Temperatura min: {weatherData.tempMin} °C </p>
         </div>
       )}
       <button onClick={handleFetchWeather}>Ingresar clima</button>
